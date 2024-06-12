@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>multi-module</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<packaging>pom</packaging>
 
 	<name>multi-module</name>
@@ -20,6 +21,7 @@
 	</properties>
 
 	<modules>
+		<module>biz</module>
 		<module>web</module>
 		<module>batch</module>
 	</modules>
@@ -38,6 +40,11 @@
 				<artifactId>lombok</artifactId>
 				<version>1.18.32</version>
 				<optional>true</optional>
+			</dependency>
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>biz</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
